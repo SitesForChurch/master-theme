@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/code/new-england-theme
+cd ~/code/master-theme
 gem install jekyll
 npm install
 npm install -g gulp
