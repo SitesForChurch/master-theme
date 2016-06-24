@@ -29,6 +29,11 @@ var ministries = new Airtable({ apiKey: config.apikey }).base(config.ministries)
 var ministriesJson = [];
 var ministriesJsonTest = [];
 
+var filehomeMinistries = '../../_data/homeministries.json';
+var homeministries = new Airtable({ apiKey: config.apikey }).base(config.ministries);
+var homeministriesJson = [];
+var homeministriesJsonTest = [];
+
 var filePhotos = '../../_data/photos.json';
 var photos = new Airtable({ apiKey: config.apikey }).base(config.photos);
 var photosJson = [];
@@ -43,6 +48,11 @@ var fileseries = '../../_data/series.json';
 var series = new Airtable({ apiKey: config.apikey }).base(config.series);
 var seriesJson = [];
 var seriesJsonTest = [];
+
+var filehomeseries = '../../_data/homeseries.json';
+var homeseries = new Airtable({ apiKey: config.apikey }).base(config.series);
+var homeseriesJson = [];
+var homeseriesJsonTest = [];
 
 
 
@@ -189,6 +199,36 @@ var updated = false;
       console.log(ministriesJson);
     });
 
+    // home ministries 
+
+    homeministries('Ministries').select({
+        maxRecords: 3,
+      //sort
+        filterByFormula: "AND(published, show_on_home_page)",
+        sort: [{field: "name", direction: "asc"}],
+      //Formula to how to get data
+      // help https://support.airtable.com/hc/en-us/articles/203255215-Formula-Field-Reference
+
+    }).eachPage(function page(records, fetchNextPage) {
+
+        // This function (`page`) will get called for each page of records.
+
+        records.forEach(function(record) {
+          homeministriesJson.push(record._rawJson.fields);
+          console.log('Retrieved ', record._rawJson.fields);
+        });
+        fetchNextPage();
+
+    }, function done(error) {
+        if (error) {
+            console.log(error);
+        }
+      jsonfile.writeFile(filehomeMinistries, homeministriesJson, function (err) {
+        console.error(err)
+      });
+      console.log(homeministriesJson);
+    });
+
     // photos 
 
     photos('photos').select({
@@ -277,4 +317,34 @@ var updated = false;
         console.error(err)
       });
       console.log(seriesJson);
+    });
+
+        // homeseries 
+
+    homeseries('Series').select({
+        maxRecords: 100,
+      //sort
+        filterByFormula: 'AND(published, IF(title = "No Series", 0,1))',
+        sort: [{field: "sermon_date", direction: "desc"}],
+      //Formula to how to get data
+      // help https://support.airtable.com/hc/en-us/articles/203255215-Formula-Field-Reference
+
+    }).eachPage(function page(records, fetchNextPage) {
+
+        // This function (`page`) will get called for each page of records.
+
+        records.forEach(function(record) {
+          homeseriesJson.push(record._rawJson.fields);
+          console.log('Retrieved ', record._rawJson.fields);
+        });
+        fetchNextPage();
+
+    }, function done(error) {
+        if (error) {
+            console.log(error);
+        }
+      jsonfile.writeFile(filehomeseries, homeseriesJson, function (err) {
+        console.error(err)
+      });
+      console.log(homeseriesJson);
     });
