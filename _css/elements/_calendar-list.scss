@@ -2,7 +2,7 @@
 
     .calendar-header {
         width: 100%;
-        background: $subtle-color; 
+        background: $success-color; 
         color: #ffffff;
         min-height: 165px;
     
@@ -50,7 +50,7 @@
 
     .calendar-list-item {
         max-width: 960px;
-        border-bottom: 1px dotted $subtle-color;
+        border-bottom: 1px dotted $success-color;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -94,12 +94,12 @@
 
             font-size: 30px;
             font-weight: bold;
-            color: $bold-color;
+            color: $warning-color;
 
         } //h3 a
 
         .details-inner {
-            background: lighten($main-color, 30%);
+            background: lighten($primary-color, 30%);
             display: flex;
             padding: 15px;
 

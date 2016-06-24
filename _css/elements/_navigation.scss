@@ -28,7 +28,7 @@ nav.main-navigation ul.navigation {
 	font-size: 18px;
 	line-height: 40px;
 	text-transform: uppercase;
-	font-family: $serif;
+	font-family: $header-font-family;
 	color: $medium-gray;
 	}
 
@@ -96,7 +96,7 @@ nav.main-navigation ul li:hover ul li a{
   display: block;
   width: inherit;
   height: 16px;
-  font: $sans-serif;
+  font: $body-font-family;
   text-align: center;
   color: white;
   cursor: pointer;
@@ -162,7 +162,7 @@ nav.main-navigation ul li:hover ul li a{
 
 .MobileNavigation > div > div a {
 			color: $medium-gray;
-			font-family: $sans-serif;
+			font-family: $body-font-family;
 			text-align: center;
 			display: block;
 			line-height: 40px;

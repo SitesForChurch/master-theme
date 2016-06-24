@@ -30,14 +30,14 @@ body {
   }
 
   a {
-    color: $subtle-color;
+    color: $success-color;
     text-decoration: none;
   }
 
   .type {
     border-bottom: 1px solid;
     display: inline-block;
-    font-family: $sans-serif;
+    font-family: $body-font-family;
     font-size: 0.7em;
     font-weight: 700;
     margin-bottom: 2em;
@@ -47,7 +47,7 @@ body {
   }
 
   h1 {
-    font-family: $serif;
+    font-family: $header-font-family;
     font-size: 2em;
     font-weight: 700;
     margin-bottom: 0.5em;
@@ -59,7 +59,7 @@ body {
   }
 
   h2 {
-    font-family: $serif-2;
+    font-family: $header-font-family;
     font-size: 1.4em;
     font-style: italic;
     font-weight: 800;
@@ -84,7 +84,7 @@ body {
   }
 
   h3 {
-    font-family: $serif;
+    font-family: $header-font-family;
     font-size: 1.4em;
     font-weight: 800;
     line-height: 1.3em;
@@ -96,27 +96,27 @@ body {
 
   p.date {
     color: transparentize($secondary-color, .6);
-    font-family: $serif-2;
+    font-family: $header-font-family;
     font-size: 0.9em;
     font-style: italic;
     margin-bottom: 0.3em;
   }
 
   p {
-    font-family: $serif-2;
+    font-family: $header-font-family;
     font-size: 0.9em;
     line-height: 1.6em;
     margin-bottom: 1.5em;
 
     span {
-      font-family: $sans-serif;
+      font-family: $body-font-family;
       font-weight: 700;
     }
   }
 
   a.read-more {
     display: inline-block;
-    font-family: $sans-serif;
+    font-family: $body-font-family;
     font-size: 0.8em;
     font-weight: 700;
     margin-left: 0.2em;
@@ -124,7 +124,7 @@ body {
     text-transform: uppercase;
 
     span {
-      font-family: $serif;
+      font-family: $header-font-family;
       font-size: 1.5em;
       font-style: normal;
       position: absolute;
@@ -135,7 +135,7 @@ body {
   
 
   p.author {
-    font-family: $serif-2;
+    font-family: $header-font-family;
     font-style: italic;
   }
 }

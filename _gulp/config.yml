@@ -1,3 +1,12 @@
+data:
+  blog: "appxF48xfkO7dHWGh"
+  sermons: "apprDNNyNO4RHDP1q"
+  series: "apprDNNyNO4RHDP1q"
+  ministries: "appo4EmHX9KELKJ0u"
+  photos: "appo4EmHX9KELKJ0u"
+  events: "appo4EmHX9KELKJ0u"
+  abouts: "appNOtPfC2oY5GcGt"
+
 browsersync:
   notify: true
   open:   false
@@ -66,3 +75,6 @@ watch:
     - "{_data,_includes,_layouts,_pages,_posts}/**/*.{md,html,yml,xml,json}"
     - "!_site/**/*.*"
     - "!assets/**/*.*"
+
+
+

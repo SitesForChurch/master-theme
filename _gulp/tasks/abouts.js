@@ -4,7 +4,10 @@ var download = require('gulp-downloader'),
      request = require('request'),
      source = require('vinyl-source-stream'),
      streamify = require('gulp-streamify');
+     config        = require('../util/loadConfig').data,
      gulp        = require('gulp');
+
+
 
 gulp.task('abouts', function () {
     return request({

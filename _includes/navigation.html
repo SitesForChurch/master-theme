@@ -46,21 +46,10 @@
         <div class="logo"><a href="http://localhost:3000/">Community Baptist Church</a></div><!--/logo-->
         <div class="InfoHeader__info">
         <div class="InfoHeader__info__ServiceTimes">
-            <ul>
-                <li>Sunday School - 10AM</li>
-                <li>Main Service - 11AM</li>
-                <li>Evening Service - 6PM</li>
-                <li>Wednesday Prayer Meeting - 7PM</li>
-            </ul>
+            {% include service-schedule.html %}
         </div><!--/service-times-->
         <div class="InfoHeader__info__ContactInfo">
-            <ul>
-                <li><i class="fa fa-phone"></i> <span>(631) 258-1563</span></li>
-                <li><i class="fa fa-map-marker"></i> <span>5267 Sound Ave</span></li>
-                <li><span>Riverhead, NY</span></li>
-                <hr>
-                <li><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-gear"></i></a></li>
-            </ul>
+            {% include address.html %}
         </div><!--/contact-info-->
         </div><!--/info-->
     </div><!--/infoHeaderWrapper-->

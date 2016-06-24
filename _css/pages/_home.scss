@@ -34,7 +34,7 @@
 }
 .home-sermon-box {
 	max-width: 350px;
-	border: 1px solid $subtle-color;
+	border: 1px solid $success-color;
 	margin-bottom: 30px;
 	@include breakpoint(large) {
 		margin-bottom: 0;
@@ -42,7 +42,7 @@
 }
 
 .service-type {
-	background: $subtle-color;
+	background: $success-color;
 	min-height: 21px;
 
 	p {
@@ -63,7 +63,7 @@
 	width: 50px;
 	flex-grow: 1;
 	a i {
-		color: $main-color;
+		color: $primary-color;
 		font-size: 50px;
 	}
 }
@@ -74,7 +74,7 @@
 	}
 	h3 a {
 		font-size: 16px;
-		color: $main-color;
+		color: $primary-color;
 		font-style: italic;
 	}
 	p {
@@ -86,7 +86,7 @@
 		margin-bottom: 0;
 		text-align: right;
 		padding-right: 10px;
-		border-top: 1px solid $subtle-color;
+		border-top: 1px solid $success-color;
 		font-size: 10px;
 		text-transform: uppercase;
 		padding-top: 3px;
@@ -102,7 +102,7 @@ article.main {
 
 	div.home-upcoming-events {
 		@include grid-column(4);
-		// border-right: 1px solid $dark-green;
+		// border-right: 1px solid $dark-gray;
 		padding-right: 20px;
 
 		@include breakpoint(medium down) {
@@ -114,11 +114,11 @@ article.main {
 		h2 {
 			width: 100%;
 			border-top: 0;
-			border-bottom: 1px solid $dark-green;
+			border-bottom: 1px solid $dark-gray;
 			text-align: center;
 			font-size: em(25);
 			font-style: normal;
-			color: $dark-green;
+			color: $dark-gray;
 			padding-bottom: 0;
 			line-height: em(25);
 		}
@@ -157,7 +157,7 @@ article.main {
 
 	div.home-gallery {
 		@include grid-column(4);
-		// border-right: 1px solid $dark-green;
+		// border-right: 1px solid $dark-gray;
 		padding-right: 20px;
 
 		@include breakpoint(medium down) {
@@ -168,11 +168,11 @@ article.main {
 		h2 {
 			width: 100%;
 			border-top: 0;
-			border-bottom: 1px solid $dark-green;
+			border-bottom: 1px solid $dark-gray;
 			text-align: center;
 			font-size: em(25);
 			font-style: normal;
-			color: $dark-green;
+			color: $dark-gray;
 			padding-bottom: 0;
 			line-height: em(25);
 		}
@@ -190,11 +190,11 @@ article.main {
 			h2 {
 				width: 100%;
 				border-top: 0;
-				border-bottom: 1px solid $dark-green;
+				border-bottom: 1px solid $dark-gray;
 				text-align: center;
 				font-size: em(25);
 				font-style: normal;
-				color: $dark-green;
+				color: $dark-gray;
 				padding-bottom: 0;
 				line-height: em(25);
 			}
@@ -297,7 +297,7 @@ article.main {
 	p {
 		font-size: 10px;
 		margin-top: 20px;
-		color: $main-color;
+		color: $primary-color;
 		text-align: center;
 	}
 }
@@ -310,6 +310,6 @@ article.main {
 	}
 
 	h4 a {
-		color: $dark-green;
+		color: $dark-gray;
 	}
 }
