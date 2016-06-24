@@ -13,39 +13,33 @@ layout: default
     </div><!--/wrapper-->
 </div><!--/calendar-header-->
 <div class="calendar-list-content">
+    {% for event in site.data.events %}
     <div class="calendar-list-item">
-        {% if  page.featured_image %}
-        {% for img in page.featured_image %}
-        <img src="{{img.url}}" alt="{{page.event_name}}">
+        {% if  event.featured_image %}
+        {% for img in event.featured_image %}
+        <img src="{{img.url}}" alt="{{event.event_name}}">
         {% endfor %}
         {% else %}
         <img src="{{site.default_calendar_image}}" alt="">
         {% endif %}
 
         <div class="details">
-            <h3><a href="#">{{page.event_name}}</a></h3>
+            <h3><a href="{{ event.event_name | datapage_url: 'events' | prepend: site.baseurl | prepend: site.url }}">{{event.event_name}}</a></h3>
             <div class="details-inner">
                 <div class="details-description">
-                    {% if page.description  %}
-                    {{ page.description | markdownify | truncate: 140 }}
+                    {% if event.description  %}
+                    {{ event.description | markdownify | truncate: 140 }}
                     {% endif %}
+                    <a href="{{ event.event_name | datapage_url: 'events' | prepend: site.baseurl | prepend: site.url }}" class="button hollow">More Details</a>
                 </div><!--/details-description-->
                 <div class="details-date">
-                    <p class="month">{{page.DateTime | date: "%b"}}</p>
-                    <p class="day">{{page.DateTime | date: "%d"}}</p>
+                    <p class="month">{{event.DateTime | date: "%b"}}</p>
+                    <p class="day">{{event.DateTime | date: "%d"}}</p>
                 </div><!--/details-date-->
             </div><!--/details-inner-->
         </div><!--/details-->
     </div><!--/calendar-list-item-->
-     <div class="event-details">
-        {% if  page.body_content %}
-        {{ page.body_content | markdownify }}
-        {% else %}
-        <p>Check back soon for more details.</p>
-        {% endif %}
-    <a href="{{site.url}}calendar-list.html" class="button event-return"> <i class="fi-left-arrow"></i> Return to Calendar</a>
-    </div> <!--/event-details-->
-
+    {% endfor %}
    
 </div><!--/calendar-list-content-->
 </div><!--/calendar-list-->

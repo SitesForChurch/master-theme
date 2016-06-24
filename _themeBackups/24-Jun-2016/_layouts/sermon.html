@@ -2,33 +2,72 @@
 layout: default
 ---
 
-
 <div class="sermonslistContent__header">
     <div class="wrapper">
         <h1>Sermons</h1>
         <h3>The Preaching Ministry of Bible Baptist Church</h3>
         </div><!--/sermonslistContent__header-->
     </div><!--/sermonlistContent__header-->
-<div class="singleSeriesHeader">
-    <h2>{{page.title}}</h2>
-    {%if page.featured_image%}
-    {% for img in page.featured_image %}
-    <img class="singleSeriesHeader__mainImage" src="{{img.url}}" alt="{{page.title}}">
+<div class="singleSermonHeader">
+    {% if page.series_featured_image %}
+    {% for img in page.series_featured_image %}
+    <img class="singleSermonHeader__mainImage" src="{{ img.url }}" alt="{{page.title}}">
     {% endfor %}
     {% else %}
-    <img class="singleSeriesHeader__mainImage" src="http://placehold.it/1920x1080" alt="Series Graphic">
+    <img class="singleSermonHeader__mainImage" src="{{site.url}} {{site.default_sermon_image}}" alt="Series Graphic">
     {% endif %}
-</div><!--/singleSeriesHeader-->
-<div class="singleSeriesContent">
-    {{page.description}}
-</div><!--/singleSeriesContent-->
+    
+    <div class="singleSermonHeader__teaser">
+    <div class="singleSermonHeader__title">
+        <h3>{{page.title}}</h3>
+         <ul class="action__buttons">
+                    {% if page.sermon_mp3 %}
+                    {% for item in page.sermon_mp3 %}
+                    <li><a href="{{item.url}}" alt="play"><i class="fi-play"></i></a></li>
+                    {% endfor %}
+                    {% endif %}
+                    {% if page.handout %}
+                    {% for item in page.handout %}
+                    <li><a href="{{item.url}}" alt="handout"><i class="fi-page-pdf"></i></a></li>
+                    {% endfor %}
+                    {% endif %}
+                    {% if page.slides %}
+                    {% for item in page.slides %}
+                    <li><a href="{{item.url}}" alt="slides"><i class="fi-projection-screen"></i></a></li>
+                    {% endfor %}
+                    {% endif %}
+                </ul><!--/action__buttons-->
+        </div><!--/sermonslistItem__title-->
+        <ul class="singleSermonHeader__tagline">
+         <li><i class="fi-calendar"></i> {{page.date}}</li>
+                <li><i class="fi-clock"></i> {{page.service}}</li>
+                <li><i class="fi-torso-business"></i> {{page.speaker_name}}</li>
+                <li><i class="fi-book"></i> {{page.bible_text}}</li>
+        </ul>
+        {% if page.sermon_mp3 %}
+                {% for item in page.sermon_mp3 %}
+                <audio class="sermonslistPlayer" controls>
+                    <source src="{{item.url}}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                <a href="{{item.url}}" class="button warning" target="blank" download><i class="fi-download"></i> Download</a>
+                {% endfor %}
+                {% endif %}
+    </div>
+</div>
+{% if page.body_content %}
+<div class="singleSermonContent">
+    {{ page.body_content | markdownify }}
+ 
+</div><!--/singleSermonContent-->
+{% endif %}
 
-<div class="sermonslistContent singleSeriesPage">
- <div class="sermonslistContent__MainList">
+ <div class="sermonslistContent singleSermonPage">
 
-   
+   <div class="sermonslistContent__MainList">
+        <h2>More Sermons From This Series:</h2>
     {% for sermon in site.data.sermons %}
-      {% if sermon.series_title[0] == page.title %}
+      {% if sermon.series_title[0] == page.series_title[0] %}
         <div class="sermonslistItem">
             <div class="sermonslistItem__teaser">
             <div class="sermonslistItem__title">
@@ -64,7 +103,7 @@ layout: default
                     <source src="{{item.url}}" type="audio/mpeg">
                     Your browser does not support the audio element.
                     </audio>
-                <a href="{{item.url}}" class="button warning" target="blank" download><i class="fi-download"></i> Download</a>
+                <a href="{{item.url}}" class="button secondary" target="blank" download><i class="fi-download"></i> Download</a>
                 {% endfor %}
                 {% endif %}
                 <a href="{{ sermon.title | datapage_url: 'sermons' | prepend: site.baseurl | prepend: site.url }}" class="button" >View Sermon</a>
@@ -74,3 +113,4 @@ layout: default
      {% endfor %}
     </div><!--/end main list-->
 </div><!--/sermonslistContent-->
+{% include serieslist.html %}
