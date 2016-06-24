@@ -1,10 +1,9 @@
 {
-  "template": "New England Theme", 
+  "template": "nodejs", 
   "ports": [3000],
-  "name": "Publify",
+  "name": "New England Theme",
   "logo": "http://i.imgur.com/DD6AioH.png",
   "scripts": {
-    "Install Dependencies": "cd ~/code/new-england-theme && npm install && bower install && npm install -g pubstorm", 
     "Start Server": "gulp",
     "Stop Server": "^C",
     "Setup Host": "storm init",
