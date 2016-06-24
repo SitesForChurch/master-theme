@@ -1,5 +1,5 @@
 {
-  "template": "nodejs", 
+  "template": "ruby", 
   "ports": [3000],
   "name": "New England Theme",
   "logo": "http://i.imgur.com/DD6AioH.png",
