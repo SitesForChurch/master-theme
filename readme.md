@@ -171,12 +171,12 @@ Back in your github repository page (on the github website), go to **settings** 
 
 ## Step 7: Setup the URLS
 
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fmIePFR6R0Q" frameborder="0" allowfullscreen></iframe>
 
 
 **Time:** 10 Minutes or less.
 
-## Step 8: Change the URLS in config yaml. 
+## Step 8: Change the URLS in config yaml, commit and push. 
 
 ## Step 9: Relax and Get Paid
 
