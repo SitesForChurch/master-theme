@@ -13,11 +13,11 @@ Welcome to a new project! In case you need a reminder, here are the steps to get
 3. Remove the "copy" from the base name.
 4. Invite the client to the base as an author.
 
-
-
 ## Step 2: Setup The Theme
 
-Use the top menu's `Run` command to change to the theme of the clients choosing.
+In [Nitrous](https://www.nitrous.io/quickstart?repo=https://github.com/SitesForChurch/master-theme.git), use the top menu's `Run` command to change to the theme of the clients choosing.
+
+After you change the theme, you can confirm it by using `Run > `
 
 ## Step 3: _config.yml
 
@@ -48,6 +48,10 @@ Go to [Airtable's API page](https://airtable.com/api) and find the APP Key for e
 
 ```
 ├── _gulp
-│   ├── config.yml
+│   ├── Airtable
+|           ├── airtable-config.yml
 ```
 
+## Step 6: Setup the URLS
+
+## Step 7: 
