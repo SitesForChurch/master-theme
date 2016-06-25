@@ -15,11 +15,17 @@ Welcome to a new project! In case you need a reminder, here are the steps to get
 
 ## Step 2: Setup The Theme
 
+<iframe width="420" height="315" src="https://www.youtube.com/embed/tzlHcvlk-Ak" frameborder="0" allowfullscreen></iframe>
+
 In [Nitrous](https://www.nitrous.io/quickstart?repo=https://github.com/SitesForChurch/master-theme.git), use the top menu's `Run` command to change to the theme of the clients choosing.
 
-After you change the theme, you can confirm it by using `Run > `
+![Nitrous Run Menu](https://dl.dropboxusercontent.com/u/47159282/Screen%20Shot%202016-06-24%20at%205.18.06%20PM.png)
+
+After you change the theme, you can confirm it by using `Run > 01. Start Server`
 
 ## Step 3: _config.yml
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aotzPgh5g9c" frameborder="0" allowfullscreen></iframe>
 
 Follow the comments (Yml comments look like this `# Comment here`)
 
@@ -52,6 +58,20 @@ Go to [Airtable's API page](https://airtable.com/api) and find the APP Key for e
 |           ├── airtable-config.yml
 ```
 
-## Step 6: Setup the URLS
+## Step 6: Setup and push to a github repository
 
-## Step 7: 
+In the console of Nitrous, type `git init.`
+
+![](https://dl.dropboxusercontent.com/u/47159282/git1.png)
+![](https://dl.dropboxusercontent.com/u/47159282/git2.png)
+![](https://dl.dropboxusercontent.com/u/47159282/git3.png)
+![](https://dl.dropboxusercontent.com/u/47159282/git4.png)
+![](https://dl.dropboxusercontent.com/u/47159282/git5.png)
+
+## Step 7: Setup the URLS
+
+## Step 8: Change the URLS in config yaml. 
+
+## Step 9: Relax and Get Paid
+
+## Step 10: Continue to communicate with your client. 
