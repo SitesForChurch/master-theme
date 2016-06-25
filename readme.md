@@ -192,8 +192,16 @@ The terminal will ask for the pubstorm username and password.
 
 It's going to ask for two things:
 
-* The 
+* The folder the site will live in.  This will **ALWAYS** be `_site`
+* The name of the site.  Most of the time you should ise the URL thr church wants without the www or .com sections (so if the site is biblebaptistmattoon.org you would just use `biblebaptistmattoon`)
 
+### iv. Run `storm publish`
+
+This will take a minute and will publish the site to `whatevernameyouchose.pubstorm.site`.
+
+### v. Copy and paste that url into the `URL` field of `_config.yml`.
+
+(See step 3 or video for further explanation.). Remember to change this back to `http://localhost:3000` when testing locally.  
 
 
 **Time:** 10 Minutes or less.
@@ -202,6 +210,17 @@ It's going to ask for two things:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UY0E1GxJPbs" frameborder="0" allowfullscreen></iframe>
 
+when you are satisfied with the site and ready to "go live" its time to pass the site off to me.  Simply...
+
+### i. run `git add .`
+
+### ii. run `git commit -m "your message here"`
+
+replace "your message here" with a description of your progress.
+
+### iii. run `git push`
+
+### iv. Copy the repositories URL from its page on github and send it to me via a slack direct message.
 
 ## Step 9: Relax and Get Paid
 
