@@ -169,14 +169,39 @@ Back in your github repository page (on the github website), go to **settings** 
 
 **Time:** 10 Minutes or less. (Even though there are 9 steps to this, it's actually something that you'll get so used to doing you'll be able to do in no time at all.  I could easily set up a github repo in less than one minute.)
 
-## Step 7: Setup the URLS
+## Step 7: Setup the Hosting
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fmIePFR6R0Q" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-tWX0yLz_g4" frameborder="0" allowfullscreen></iframe>
+
+The last major step is setting up the URLs. To do this, we use a service called **Pubstorm.**  100% of this is done in Nitrous, in the terminal.  All you need to do is copy and paste a few commands.
+
+As usual, make sure that you are in the master-theme directory in the terminal.  It should look like this - if not, type `cd ~/code/master-theme`.  Once this is done, it's just three simple steps:
+
+
+### i. Run `npm install -g pubstorm`
+
+This installs pubstorms tools on the system so we can do the next step.
+
+### ii. Run `storm login`
+
+The terminal will ask for the pubstorm username and password.
+
+> **Note:** The username for our account is `sitesforchurch@gmail.com` the password will be sent to you via email.
+
+### iii. Run `storm init`
+
+It's going to ask for two things:
+
+* The 
+
 
 
 **Time:** 10 Minutes or less.
 
-## Step 8: Change the URLS in config yaml, commit and push. 
+## Step 8: Pass the site code off to me. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UY0E1GxJPbs" frameborder="0" allowfullscreen></iframe>
+
 
 ## Step 9: Relax and Get Paid
 
