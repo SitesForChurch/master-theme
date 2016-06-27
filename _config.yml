@@ -17,6 +17,10 @@ default_blog_image: "assets/default_header.jpg"
 default_about_image: "assets/default_header.jpg"
 default_calendar_image: "assets/calendar_default.jpg"
 
+# The lattitude and longitude for Google Maps
+map_lat: "39.476286"
+map_long: "-88.4009097"
+
 # LEAVE EVERYTHING ELSE ALONE!!
 
 # Build settings
