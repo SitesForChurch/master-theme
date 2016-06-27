@@ -3,12 +3,25 @@ layout: default
 ---
 <style>
     .welcome {
-    background: url(assets/welcomebackground.jpg) no-repeat top center;
+    background: url({{site.default_header_image}}) no-repeat top center;
     background-size: contain;
     padding-top: 100px;
     min-height: 1200px;
     }
 </style>
+
+<!-- This welcome page is a little bit more complicated than the one on California.  It too has a banded design, but it uses a single page menu.  
+
+Here is how it works -there are three elements to it:
+
+First, the welcome_Menu.
+    This is the menu for this page that sticks to the top of the screen as you scroll down.  It's pretty cool.  Instead of a URL in the <a href=""> part, put the symbol # and then the ID of the div section.  So if it is <div id="section-1"></div>  You would link to that with <a href="#section-1"></a>.
+Second, the div sections:
+    Each band or section of the page sits in a <div> tag.  This tag has to have two extra elements: an "ID" and a "data-magellan-target".  So the section-1 section would sit in a div that looks like this: <div class="section-1" id="section-1" data-magellan-target="section-1">
+ 
+
+
+-->
 
 <div class="welcome">
     <div class="welcome__Header">
@@ -57,7 +70,32 @@ layout: default
              <h2>Our Location</h2>
              <h3>How do I get to CBC?</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates saepe quia eaque iste dolorem praesentium, doloremque quam fugit delectus cumque expedita! Dolores consequatur, iste non eos corporis optio suscipit quasi?</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48200.68596772981!2d-72.65404492246601!3d40.969592029752874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e88bf438843fa7%3A0xae0fd43d7f0670b1!2s5267+Sound+Ave%2C+Riverhead%2C+NY+11901!5e0!3m2!1sen!2sus!4v1453866313647" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div id="map">
+            
+        </div><!-- /map -->
+        <script>
+          function initMap() {
+            var mapDiv = document.getElementById('map');
+            var myLatLng = { lat: {{site.map_lat}}, lng: {{site.map_long}}  };
+            var churchPos = { lat: {{site.map_lat}}, lng: {{site.map_long}} };
+            var map = new google.maps.Map(mapDiv, {
+          center: myLatLng,
+          zoom: 15
+        });
+        var image = 'https://dl.dropboxusercontent.com/u/47159282/churchIcon.png';
+        var marker = new google.maps.Marker({
+            position: churchPos,
+            map: map,
+            title: '{{site.title}}',
+            icon: image
+        });
+        // To add the marker to the map, call setMap();
+        marker.setMap(map);
+      }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
         </div>
         <div id="expect" class="welcome__Content__expect" data-magellan-target="expect">
              <h2>What To Expect</h2>
