@@ -1,43 +1,57 @@
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-    <meta charset="UTF-8">
-    
-    <title>Cranesville Bible Church, Cranesville, PA</title>
-    
-     <link href='//fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
-      <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-      <link href='//fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://localhost:3000/assets/css/app.css">
-    <meta name="viewport" content="width=device-width"> 
-  </head>
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cranesville Bible Church, Cranesville, PA</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus blanditiis odio corrupti,  illum architecto consequuntur, quaerat unde repudiandae qui temporibus! Fuga maxime molestiae hic impedit  sit sint perferendis rerum unde.
+">
+
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="canonical" href="http://localhost:3000//">
+  <link rel="alternate" type="application/rss+xml" title="Cranesville Bible Church, Cranesville, PA" href="http://localhost:3000//feed.xml">
+</head>
+
   <body>
-    <div class="wrapper">
-    <!--Navigation-->
-    <div class="MobileNavWrapper">
-    <div class="MobileNavigation">
-            <div>
-                <div class="calendar-button"><a href="http://localhost:3000/calendar-list.html"><i class="fa fa-calendar"></i> CALENDAR</a></div>
-                <div class="sermons-button"><a href="http://localhost:3000/sermons.html"><i class="fa fa-microphone"></i> SERMONS</a></div>
-                <div class="menu-button">
-                <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-                <label for="nav-trigger" class="hamburger-label"><i class="fa fa-navicon"></i> MENU</label>
-        <nav class="MobileNavigation__sidebar">
-        <ul class="MobileNavigation__slideout">
-        <!-- Use October includes to mirror the menus -->
-            <li><a href="http://localhost:3000/welcome.html">Welcome</a></li>
-            <li class="dropdown"><a href="#">About Us</a>
-                <ul>
+
+    <div class="off-canvas-wrapper">
+<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+<header>
+    <div class="infoBar">
+    <h1><a href="http://localhost:3000/">Cranesville <span>Bible Church</span></a></h1>
+    <div class="service-times">
+            <ul class="menu vertical">
+                <li>Sunday School<span> 10:00AM</span></li>
+                <li>Morning Worship<span>11:00AM</span></li>
+                <li>Evening Worship<span> 6:00PM</span></li>
+                <li>Wednesday Bible Study<span> 6:30PM</span></li>
+            </ul>
+    </div><!--/service-times-->
+    <div class="contact">
+            <p>
+                10029 Reed St, Cranesville, PA 16410 <br>
+                (814) 746-5287 • info@cranesvillebiblechurch.com <br>
+                <a href="https://www.facebook.com/CranesvilleBibleChurch/?fref=ts"><i class="fi-social-facebook"></i> CranesvilleBibleChurch</a>
+            </p>
+    </div><!--/contact-->
+
+    </div><!--/infoBar-->
+<div class="MainNavigation">
+        <ul class="dropdown menu" data-dropdown-menu>
+            <li><a href="http://localhost:3000/welcome.html">WELCOME</a></li>
+            <li><a href="#">ABOUT US</a>
+                <ul class="menu">
                     
                     <li><a href="http://localhost:3000/about-us/our-leadership.html">Our Leadership</a></li>
                     
-
                 </ul>
-            </li>
-            <li class="dropdown"><a href="#">Ministries</a>
-            <ul>
-                     
+            </li><!--/End of About Us-->
+            <li><a href="#">MINISTRIES</a>
+                <ul class="menu">
+                    
                     <li><a href="http://localhost:3000/ministries/childrens-ministries.html">Children’s Ministries</a></li>
                     
                     <li><a href="http://localhost:3000/ministries/church-wide.html">Church Wide</a></li>
@@ -56,306 +70,210 @@
                     
                     <li><a href="http://localhost:3000/ministries/youth-ministries.html">Youth Ministries</a></li>
                     
-                </ul></li>
-            <li><a href="http://localhost:3000/calendar-list.html">Calendar</a></li>
-            <li class="dropdown"><a href="#">Media</a>
-            <ul>
-                    <li><a href="http://localhost:3000/blog-list.html">Blog</a></li>
-                    <li><a href="http://localhost:3000/sermons.html">Sermons</a></li>
-                    <li><a href="http://localhost:3000/gallery.html">Gallery</a></li>
-                </ul></li>
-            <li><a href="http://localhost:3000/contact-us.html">Contact Us</a></li>
-        </ul>
-    </nav><!--/sidebar nav-->
-                </div>
-            </div>
-        </div><!--/mobile-nav-->
-    </div><!--/mobile nav wrapper-->
-    <div class="content">
-        <div class="InfoHeader">
-        <div class="InfoHeaderWrapper">
-        <div class="logo"><a href="http://localhost:3000/">Community Baptist Church</a></div><!--/logo-->
-        <div class="InfoHeader__info">
-        <div class="InfoHeader__info__ServiceTimes">
-            <ul>
-                <li>Sunday School - 10AM</li>
-                <li>Main Service - 11AM</li>
-                <li>Evening Service - 6PM</li>
-                <li>Wednesday Prayer Meeting - 7PM</li>
-            </ul>
-        </div><!--/service-times-->
-        <div class="InfoHeader__info__ContactInfo">
-            <ul>
-                <li><i class="fa fa-phone"></i> <span>(631) 258-1563</span></li>
-                <li><i class="fa fa-map-marker"></i> <span>5267 Sound Ave</span></li>
-                <li><span>Riverhead, NY</span></li>
-                <hr>
-                <li><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-gear"></i></a></li>
-            </ul>
-        </div><!--/contact-info-->
-        </div><!--/info-->
-    </div><!--/infoHeaderWrapper-->
-        </div><!--/info-header-->
-        <nav class="main-navigation">
-        <ul class="navigation">
-            <li><a href="http://localhost:3000/welcome.html">Welcome</a></li>
-            <li class="dropdown"><a href="#">About Us</a>
-                <ul>
-                    
-                    <li><a href="http://localhost:3000/about-us/our-leadership.html">Our Leadership</a></li>
-                    
-
                 </ul>
-            </li>
-            <li class="dropdown"><a href="#">Ministries</a>
-            <ul>
-                     
-                    <li><a href="http://localhost:3000/ministries/childrens-ministries.html">Children’s Ministries</a></li>
-                    
-                    <li><a href="http://localhost:3000/ministries/church-wide.html">Church Wide</a></li>
-                    
-                    <li><a href="http://localhost:3000/ministries/classic-christians.html">Classic Christians</a></li>
-                    
-                    <li><a href="http://localhost:3000/ministries/machs.html">MACHS</a></li>
-                    
-                    <li><a href="http://localhost:3000/ministries/mothers-of-mattoon.html">Mother's of Mattoon</a></li>
-                    
-                    <li><a href="http://localhost:3000/ministries/patch-the-pirate-clubs.html">Patch the Pirate Clubs</a></li>
-                    
-                    <li><a href="http://localhost:3000/ministries/sports.html">Sports</a></li>
-                    
-                    <li><a href="http://localhost:3000/ministries/sunday-school.html">Sunday School</a></li>
-                    
-                    <li><a href="http://localhost:3000/ministries/youth-ministries.html">Youth Ministries</a></li>
-                    
-                </ul></li>
-            <li><a href="http://localhost:3000/calendar-list.html">Calendar</a></li>
-            <li class="dropdown"><a href="#">Media</a>
-            <ul>
-                    <li><a href="http://localhost:3000/blog-list.html">Blog</a></li>
+            </li><!--/ministries-->
+            <li><a href="http://localhost:3000/calendar-list.html">CALENDAR</a></li>
+            <li><a href="#">MEDIA</a>
+                <ul class="menu">
                     <li><a href="http://localhost:3000/sermons.html">Sermons</a></li>
-                    <li><a href="http://localhost:3000/gallery.html">Gallery</a></li>
-                </ul></li>
-            <li><a href="http://localhost:3000/contact-us.html">Contact Us</a></li>
-        </nav><!--/main-navigation-->
-
-     <div class="hero">
-            <div class="hero-content">
-                <h2>Exalting Christ and seeing Him change lives in Riverhead since 2010.</h2>
-                <div class="buttons">
-                <a href="http://localhost:3000/welcome.html" class="button">Plan A Visit</a>
-                <a href="http://localhost:3000/contact-us.html" class="button">Get In Touch</a>
-                </div><!--/buttons-->
-            </div><!--/hero-content-->
-        </div><!--/hero-->
-        <div class="home-sermons">
-            <h2>Latest Sermons</h2>
-            <div class="home-sermon-list">
-
-              
-                
-                <div class="home-sermon-box">
-                    <div class="service-type"><p><i class="fa fa-microphone"></i> Sunday AM</p></div><!--/service-type-->
-                    <div class="sermon-info">
-                        <div class="play-button">
-                            
-                            <a href="#" class="play"><i class="fa fa-play-circle"></i></a>
-                            
-                        </div><!--/play-button-->
-                        <div class="sermon-info-info">
-                            <h3><a href="http://localhost:3000/sermons/preach-it-paul.html">Preach it Paul!</a></h3>
-                            <p><i class="fa fa-user"></i>Ryan Hayden  <i class="fa fa-calendar"></i> 05/15/16  <i class="fa fa-book"></i> Acts 13:16-41</p>
-                        </div><!--/sermon-info-info-->
-                    </div><!--/sermon-info-->
-                    <p class="series-link"><a href="http://localhost:3000/series/preach-it-paul.html">More from this series <i class="fa fa-external-link"></i></a></p>
-                </div><!--/home-sermon-box-->
-                
-                <div class="home-sermon-box">
-                    <div class="service-type"><p><i class="fa fa-microphone"></i> Sunday AM</p></div><!--/service-type-->
-                    <div class="sermon-info">
-                        <div class="play-button">
-                            
-                                
-                            <a href="https://dl.airtable.com/em6AsYKlR0CWAtQbfy61_2016%200522%20sun%20am.mp3" class="play"><i class="fa fa-play-circle"></i></a>
-                             
-                            
-                        </div><!--/play-button-->
-                        <div class="sermon-info-info">
-                            <h3><a href="http://localhost:3000/sermons/when-they-throw-rocks.html">When They Throw Rocks</a></h3>
-                            <p><i class="fa fa-user"></i>Ryan Hayden  <i class="fa fa-calendar"></i> 05/22/16  <i class="fa fa-book"></i> Acts 14:1-20</p>
-                        </div><!--/sermon-info-info-->
-                    </div><!--/sermon-info-->
-                    <p class="series-link"><a href="http://localhost:3000/series/when-they-throw-rocks.html">More from this series <i class="fa fa-external-link"></i></a></p>
-                </div><!--/home-sermon-box-->
-                
-                <div class="home-sermon-box">
-                    <div class="service-type"><p><i class="fa fa-microphone"></i> Sunday PM</p></div><!--/service-type-->
-                    <div class="sermon-info">
-                        <div class="play-button">
-                            
-                                
-                            <a href="https://dl.airtable.com/bcOkgIJDSYOenuM2GDzX_2016%200522%20sun%20pm.mp3" class="play"><i class="fa fa-play-circle"></i></a>
-                             
-                            
-                        </div><!--/play-button-->
-                        <div class="sermon-info-info">
-                            <h3><a href="http://localhost:3000/sermons/what-christians-need.html">What Christians Need</a></h3>
-                            <p><i class="fa fa-user"></i>Ryan Hayden  <i class="fa fa-calendar"></i> 05/22/16  <i class="fa fa-book"></i> Acts 14:21-28</p>
-                        </div><!--/sermon-info-info-->
-                    </div><!--/sermon-info-->
-                    <p class="series-link"><a href="http://localhost:3000/series/what-christians-need.html">More from this series <i class="fa fa-external-link"></i></a></p>
-                </div><!--/home-sermon-box-->
-                
-               
-        </div><!--/home-sermon-list-->
-        </div><!--/home-sermons-->
-        <div class="main-content-wrapper">
-        <article class="main">
-        <div class="home-upcoming-events">
-        <h2>Upcoming Events</h2>
-         
-         <article class="event">
-        <div class="event-date">
-          <p class="event-month">Jun</p>
-          <p class="event-day">12</p>
-        </div>
-        <div class="event-desc">
-          <h4 class="event-desc-header">Summer Seminar Starts</h4>
-          <a href="http://localhost:3000/events/summer-seminar-starts.html" class="rsvp button">Details</a>
-        </div>
-
-      </article>
-      
-         <article class="event">
-        <div class="event-date">
-          <p class="event-month">Jun</p>
-          <p class="event-day">19</p>
-        </div>
-        <div class="event-desc">
-          <h4 class="event-desc-header">Dr. Al Reichman</h4>
-          <a href="http://localhost:3000/events/dr.-al-reichman.html" class="rsvp button">Details</a>
-        </div>
-
-      </article>
-      
-         <article class="event">
-        <div class="event-date">
-          <p class="event-month">Jul</p>
-          <p class="event-day">11</p>
-        </div>
-        <div class="event-desc">
-          <h4 class="event-desc-header">Vacation Bible School</h4>
-          <a href="http://localhost:3000/events/vacation-bible-school.html" class="rsvp button">Details</a>
-        </div>
-
-      </article>
-      
-
-     
-        </div><!--/upcoming-events-->
-        <div class="home-gallery">
-        <h2>Recent Photos</h2>
-        <div class="gallery-files">
-        
-                      
-        <a class="gallery" href="https://dl.airtable.com/vrjjwKFwQFSQw5Sgtjos_IMG_2424.jpg">
-                    <img src="https://dl.airtable.com/Ru1KEJATSm6ZZ35Uwf3g_large_IMG_2424.jpg" width="150" height="150" />
-        </a><!--/gallery-item-->
-                      
-        <a class="gallery" href="https://dl.airtable.com/qP601lMQvGtyOuFe49FO_IMG_2432.jpg">
-                    <img src="https://dl.airtable.com/nPAKQvIqRFC9QtwS6P2X_large_IMG_2432.jpg" width="150" height="150" />
-        </a><!--/gallery-item-->
-                      
-        <a class="gallery" href="https://dl.airtable.com/GwfXQ0lkTGqCvNCpBarq_IMG_2421.jpg">
-                    <img src="https://dl.airtable.com/ZheSGnOsSDOLgVj9Q8O8_large_IMG_2421.jpg" width="150" height="150" />
-        </a><!--/gallery-item-->
-                      
-        <a class="gallery" href="https://dl.airtable.com/xg25PSdJRPKGB3ahI88d_IMG_2427.jpg">
-                    <img src="https://dl.airtable.com/I31JAyJQCmdj9WzxQquw_large_IMG_2427.jpg" width="150" height="150" />
-        </a><!--/gallery-item-->
-             <!--/end individual images-->
-           <!--/ end gallery loop -->  
- 
-       
-</div><!--/gallery-files-->
-            <a href="#" class="button">See More</a>
-        </div><!--/gallery-->
-
-
-        <div class="home-blog">
-        <h2>Blog Posts</h2>
-            <div class="home_post_list">
-                
-                <div class="post_list_post">
-                    <div class="post_list_image">
-                        <a href="a href="http://localhost:3000/blog-posts/bridging-the-generational-divide.html">
-                            
-                            
-                            <img src="https://dl.airtable.com/B3u63gTITX6y9a1gDTlg_divide.jpg" alt="Bridging the Generational Divide">
-                            
-                            
-                            <p><i class="fa fa-user"></i> Pastor Ryan Hayden <br> <i class="fa fa-list"></i> Articles</p>
-                        </a>
-                    </div><!--/post_list_image-->
-                    <div class="post_list_info">
-                        <h4><a href="a href="http://localhost:3000/blog-posts/bridging-the-generational-divide.html">Bridging the Generational Divide</a></h4>
-
-                        <a href="a href="http://localhost:3000/blog-posts/bridging-the-generational-divide.html" class="button post_list_read_more">Read More</a>
-                    </div><!--/post_list_info-->
-                </div><!--/post_list_post-->
-                
-                <div class="post_list_post">
-                    <div class="post_list_image">
-                        <a href="a href="http://localhost:3000/blog-posts/the-standards-comparison-trap.html">
-                            
-                            
-                            <img src="https://dl.airtable.com/qlMRo9d3TaGgXBthSkpW_standards.jpg" alt="The Standards Comparison Trap">
-                            
-                            
-                            <p><i class="fa fa-user"></i> Pastor Ryan Hayden <br> <i class="fa fa-list"></i> Articles</p>
-                        </a>
-                    </div><!--/post_list_image-->
-                    <div class="post_list_info">
-                        <h4><a href="a href="http://localhost:3000/blog-posts/the-standards-comparison-trap.html">The Standards Comparison Trap</a></h4>
-
-                        <a href="a href="http://localhost:3000/blog-posts/the-standards-comparison-trap.html" class="button post_list_read_more">Read More</a>
-                    </div><!--/post_list_info-->
-                </div><!--/post_list_post-->
-                
-
-            </div><!--/home_post_list-->
-        </div><!--/home-blog-->
-    </article><!--/main-->
-    </div><!--/main-content-wrapper-->
-    </div><!--/content-->
-
-    </div><!--/wrapper-->  
-<footer>
-        <div class="footer-wrapper">
-        <div class="footer-main">
-            <ul>
-                <li><a href="#">Visit</a></li>
-                <li><a href="">Sermons</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-            <p>Community Baptist is located at 5267 Sound Ave, across from the North Fork Christmas Tree farm and one mile east of Long Island National Golf Club.  <a href="#">Visit this Sunday.</a></p>
-        </div><!--/main footer-->
-        <div class="footer-contact">
-        <p class="logo">Community Baptist Church</p>
-        <ul>
-            <li><a href="#"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a></li>
-            <li><a href="#"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a></li>
-            <li><a href="#"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-youtube fa-stack-1x"></i></span></a></li>
-            <li><a href="#"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-rss fa-stack-1x"></i></span></a></li>
-            <li><a href="#"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-gear fa-stack-1x"></i></span></a></li>
-        </ul>
+                    <li><a href="http://localhost:3000/blog-list.html">Blog</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </li><!--/media-->
+            <li><a href="http://localhost:3000/contact-us.html">CONTACT US</a></li>
+        </ul><!--.dropdown menu -->
+</div><!--/MainNavigation-->
+<div class="MobileNavigation">
+    <button type="button" data-toggle="offCanvas"> <i class="fi-list"></i></button>
+</div>
+</header>
+<div class="off-canvas position-right mobile-sidebar" id="offCanvas" data-off-canvas data-position="right">
+    <ul class="vertical menu" data-accordion-menu>
+    <li><a href="http://localhost:3000/">HOME</a></li>
+    <li><a href="http://localhost:3000/welcome.html">WELCOME</a></li>
+    <li><a href="#">ABOUT US</a>
+        <ul class="menu">
             
-        </div><!--/footer-contact-->
-        </div><!--/footer-wrapper-->
-    </footer>
-    <script src="http://localhost:3000/assets/js/app.js"></script>
+            <li><a href="http://localhost:3000/about-us/our-leadership.html">Our Leadership</a></li>
+            
+        </ul>
+    </li><!--/End of About Us-->
+    <li><a href="#">MINISTRIES</a>
+        <ul class="menu">
+                    
+                    <li><a href="http://localhost:3000/ministries/childrens-ministries.html">Children’s Ministries</a></li>
+                    
+                    <li><a href="http://localhost:3000/ministries/church-wide.html">Church Wide</a></li>
+                    
+                    <li><a href="http://localhost:3000/ministries/classic-christians.html">Classic Christians</a></li>
+                    
+                    <li><a href="http://localhost:3000/ministries/machs.html">MACHS</a></li>
+                    
+                    <li><a href="http://localhost:3000/ministries/mothers-of-mattoon.html">Mother's of Mattoon</a></li>
+                    
+                    <li><a href="http://localhost:3000/ministries/patch-the-pirate-clubs.html">Patch the Pirate Clubs</a></li>
+                    
+                    <li><a href="http://localhost:3000/ministries/sports.html">Sports</a></li>
+                    
+                    <li><a href="http://localhost:3000/ministries/sunday-school.html">Sunday School</a></li>
+                    
+                    <li><a href="http://localhost:3000/ministries/youth-ministries.html">Youth Ministries</a></li>
+                    
+                </ul>
+    </li><!--/ministries-->
+    <li><a href="http://localhost:3000/calendar-list.html">CALENDAR</a></li>
+    <li><a href="#">MEDIA</a>
+        <ul class="menu">
+            <li><a href="http://localhost:3000/sermons.html">Sermons</a></li>
+            <li><a href="http://localhost:3000/blog-list.html">Blog</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </li><!--/media-->
+    <li><a href="http://localhost:3000/contact-us.html">CONTACT US</a></li>
+</ul><!--.dropdown menu --></div><!--slideout menu-->
+<div class="off-canvas-content" data-off-canvas-content>
+
+
+
+        <div class="hero">
+    <div class="hero__box">
+        <h3 class="study">Rooted and built up in Him and established in the faith, as you have been taught.</h3>
+        <h4>Colossians 2:6-7</h4>
+    </div>
+    <p><i class="fi-arrow-down"></i></p>
+</div><!--/hero-->
+<div class="visitor-section">
+    <div class="wrapper">
+        <h2>We'd love to have you visit this is this Sunday.</h2>
+        <a href="http://localhost:3000/welcome.html" class="button visitor-button"> <i class="fi-heart"></i> Info for Visitors</a>
+    </div><!--/wrapper-->
+</div><!--/visitors-->
+<div class="currentSeries">
+    
+    <div class="currentSeries__series">
+        <a href="http://localhost:3000/series/genesis.html"><img src="https://dl.airtable.com/imwruW8T8KjARILAP0jv_Genesis.jpg" alt="sermon series graphic" class="thumbnail"></a>
+        
+    <p>Sunday Evenings at 6:00 pm</p>
+        
+    <h3><a href="http://localhost:3000/series/genesis.html">Genesis</a></h3>
+    <p>On Sunday evenings we are studying the book of Genesis.  Starting from creation through the story...</p>
+    </div><!--/currentSeries__series-->
+    
+    <div class="currentSeries__series">
+        <a href="http://localhost:3000/series/no-series.html"><img src="https://dl.airtable.com/D6kZAUIGSPvLkMQtnfPN_4.jpg" alt="sermon series graphic" class="thumbnail"></a>
+        
+    <h3><a href="http://localhost:3000/series/no-series.html">No Series</a></h3>
+    <p>This is a catch all for sermons who have no series.</p>
+    </div><!--/currentSeries__series-->
+    
+    <div class="currentSeries__explanation">
+        <p>Click either of the links above to listen to recent sermons from these series.</p>
+    </div><!--/currentSeries__explanation-->
+</div><!--/currentSeries-->
+<div class="homeMinistries">
+    <h1>Featured Ministries</h1>
+    
+        
+            <div class="ministry" style="background: url(/assets/default_header.jpg) no-repeat center center">
+        
+
+        <div class="ministry2">
+        <div class="ministry__wrapper">
+            <div class="ministry__wrapper2">
+        <h2><a href="http://localhost:3000/ministries/childrens-ministries.html">Children’s Ministries</a></h2>
+        <p></p>
+        <a class="button hollow" href="http://localhost:3000/ministries/childrens-ministries.html">Learn More</a>
+    </div><!--/ministry__wrapper2-->
+    </div><!--/ministry-wrapper-->
+    </div><!--/ministry2-->
+    </div><!--/ministry-->
+    
+        
+            <div class="ministry" style="background: url(/assets/default_header.jpg) no-repeat center center">
+        
+
+        <div class="ministry2">
+        <div class="ministry__wrapper">
+            <div class="ministry__wrapper2">
+        <h2><a href="http://localhost:3000/ministries/church-wide.html">Church Wide</a></h2>
+        <p></p>
+        <a class="button hollow" href="http://localhost:3000/ministries/church-wide.html">Learn More</a>
+    </div><!--/ministry__wrapper2-->
+    </div><!--/ministry-wrapper-->
+    </div><!--/ministry2-->
+    </div><!--/ministry-->
+    
+        
+            
+                <div class="ministry" style="background: url(https://dl.airtable.com/NgQaVNXR1WTu3s7qsGhU_classicChristians.jpg) no-repeat center center">
+       	    
+        
+
+        <div class="ministry2">
+        <div class="ministry__wrapper">
+            <div class="ministry__wrapper2">
+        <h2><a href="http://localhost:3000/ministries/classic-christians.html">Classic Christians</a></h2>
+        <p>A monthly fellowship group for seniors.</p>
+        <a class="button hollow" href="http://localhost:3000/ministries/classic-christians.html">Learn More</a>
+    </div><!--/ministry__wrapper2-->
+    </div><!--/ministry-wrapper-->
+    </div><!--/ministry2-->
+    </div><!--/ministry-->
+    
+</div><!--/homeMinistries-->
+<div class="homeEvents">
+    <h2>Next Church Event</h2>
+    <div class="homeEvents__explanation">
+        <p>There is always something going on at Bible Baptist.  Here is what is coming up next:</p>
+        <a href="http://localhost:3000/calendar-list.html" class="button"><i class="fi-info"></i>  View All Events</a>
+    </div><!--/homeEvents__explanation-->
+    
+    <div class="homeEvents__feature">
+        <a href="http://localhost:3000/events/summer-seminar-starts.html">
+            
+            
+            <img src="https://dl.airtable.com/61L1pgzyTU2YZpMyyAr2_Screen%20Shot%202016-06-14%20at%2010.06.55%20PM.png" alt="Summer Seminar Starts" width="526" >
+            
+            
+        </a>
+        <h3><a href="http://localhost:3000/events/summer-seminar-starts.html"> Summer Seminar Starts </a></h3>
+        <p class="date"> Sun, June 12, 16 </p>
+    </div><!--/homeEvents__feature-->
+    
+</div><!--/homeEvents-->
+<div class="homeLinks">
+    <ul class="quickLinks">
+        <li><a href="http://localhost:3000/about-us/our-leadership.html"><i class="fi-torso"></i> Meet Our Pastor</a></li>
+        <li><a href="http://localhost:3000/blog-list.html"><i class="fi-book"></i> Read Blog Posts</a></li>
+        <li><a href="http://localhost:3000/welcome.html"><i class="fi-map"></i> Get Directions</a></li>
+        <li><a href="#"><i class="fi-first-aid"></i> The Gospel</a></li>
+    </ul>
+</div>
+
+
+    <footer>
+    <div class="footer-wrapper">
+        <div class="footer-info">
+        <h3>Cranesville Bible Church</h3>
+        <p>Cranesville, PA</p>
+        <div class="address">
+            <p><i class="fi-map"></i>   10029 Reed St, Cranesville, PA 16410 <br>
+                <i class="fi-telephone"></i>  (814) 746-5287 <br>
+                <i class="fi-mail"></i>   info@cranesvillebiblechurch.com <br>
+                <a href="#" title="sign in" class="footer-sign-in"><i class="fi-widget"></i> Manager Sign In</a>
+            </p>
+        </div><!--/address-->
+    </div><!--/footer-info-->
+    </div><!--/footer-wrapper-->
+</footer>
+</div><!--/ off canvas content wrapper-->
+</div><!--/off canvas wrapper 2-->
+</div><!--/ off canvas wrapper 1-->
+<script src="/assets/js/app.js"></script>
+</body>
+</html>
+
 
   </body>
+
 </html>

@@ -1,43 +1,57 @@
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-    <meta charset="UTF-8">
-    
-    <title>Preach it Paul!</title>
-    
-     <link href='//fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
-      <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-      <link href='//fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://localhost:3000/assets/css/app.css">
-    <meta name="viewport" content="width=device-width"> 
-  </head>
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Preach it Paul!</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus blanditiis odio corrupti,  illum architecto consequuntur, quaerat unde repudiandae qui temporibus! Fuga maxime molestiae hic impedit  sit sint perferendis rerum unde.
+">
+
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="canonical" href="http://localhost:3000//sermons/preach-it-paul.html">
+  <link rel="alternate" type="application/rss+xml" title="Cranesville Bible Church, Cranesville, PA" href="http://localhost:3000//feed.xml">
+</head>
+
   <body>
-    <div class="wrapper">
-    <!--Navigation-->
-    <div class="MobileNavWrapper">
-    <div class="MobileNavigation">
-            <div>
-                <div class="calendar-button"><a href="http://localhost:3000/calendar-list.html"><i class="fa fa-calendar"></i> CALENDAR</a></div>
-                <div class="sermons-button"><a href="http://localhost:3000/sermons.html"><i class="fa fa-microphone"></i> SERMONS</a></div>
-                <div class="menu-button">
-                <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-                <label for="nav-trigger" class="hamburger-label"><i class="fa fa-navicon"></i> MENU</label>
-        <nav class="MobileNavigation__sidebar">
-        <ul class="MobileNavigation__slideout">
-        <!-- Use October includes to mirror the menus -->
-            <li><a href="http://localhost:3000/welcome.html">Welcome</a></li>
-            <li class="dropdown"><a href="#">About Us</a>
-                <ul>
+
+    <div class="off-canvas-wrapper">
+<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+<header>
+    <div class="infoBar">
+    <h1><a href="http://localhost:3000/">Cranesville <span>Bible Church</span></a></h1>
+    <div class="service-times">
+            <ul class="menu vertical">
+                <li>Sunday School<span> 10:00AM</span></li>
+                <li>Morning Worship<span>11:00AM</span></li>
+                <li>Evening Worship<span> 6:00PM</span></li>
+                <li>Wednesday Bible Study<span> 6:30PM</span></li>
+            </ul>
+    </div><!--/service-times-->
+    <div class="contact">
+            <p>
+                10029 Reed St, Cranesville, PA 16410 <br>
+                (814) 746-5287 • info@cranesvillebiblechurch.com <br>
+                <a href="https://www.facebook.com/CranesvilleBibleChurch/?fref=ts"><i class="fi-social-facebook"></i> CranesvilleBibleChurch</a>
+            </p>
+    </div><!--/contact-->
+
+    </div><!--/infoBar-->
+<div class="MainNavigation">
+        <ul class="dropdown menu" data-dropdown-menu>
+            <li><a href="http://localhost:3000/welcome.html">WELCOME</a></li>
+            <li><a href="#">ABOUT US</a>
+                <ul class="menu">
                     
                     <li><a href="http://localhost:3000/about-us/our-leadership.html">Our Leadership</a></li>
                     
-
                 </ul>
-            </li>
-            <li class="dropdown"><a href="#">Ministries</a>
-            <ul>
-                     
+            </li><!--/End of About Us-->
+            <li><a href="#">MINISTRIES</a>
+                <ul class="menu">
+                    
                     <li><a href="http://localhost:3000/ministries/childrens-ministries.html">Children’s Ministries</a></li>
                     
                     <li><a href="http://localhost:3000/ministries/church-wide.html">Church Wide</a></li>
@@ -56,60 +70,37 @@
                     
                     <li><a href="http://localhost:3000/ministries/youth-ministries.html">Youth Ministries</a></li>
                     
-                </ul></li>
-            <li><a href="http://localhost:3000/calendar-list.html">Calendar</a></li>
-            <li class="dropdown"><a href="#">Media</a>
-            <ul>
-                    <li><a href="http://localhost:3000/blog-list.html">Blog</a></li>
+                </ul>
+            </li><!--/ministries-->
+            <li><a href="http://localhost:3000/calendar-list.html">CALENDAR</a></li>
+            <li><a href="#">MEDIA</a>
+                <ul class="menu">
                     <li><a href="http://localhost:3000/sermons.html">Sermons</a></li>
-                    <li><a href="http://localhost:3000/gallery.html">Gallery</a></li>
-                </ul></li>
-            <li><a href="http://localhost:3000/contact-us.html">Contact Us</a></li>
+                    <li><a href="http://localhost:3000/blog-list.html">Blog</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </li><!--/media-->
+            <li><a href="http://localhost:3000/contact-us.html">CONTACT US</a></li>
+        </ul><!--.dropdown menu -->
+</div><!--/MainNavigation-->
+<div class="MobileNavigation">
+    <button type="button" data-toggle="offCanvas"> <i class="fi-list"></i></button>
+</div>
+</header>
+<div class="off-canvas position-right mobile-sidebar" id="offCanvas" data-off-canvas data-position="right">
+    <ul class="vertical menu" data-accordion-menu>
+    <li><a href="http://localhost:3000/">HOME</a></li>
+    <li><a href="http://localhost:3000/welcome.html">WELCOME</a></li>
+    <li><a href="#">ABOUT US</a>
+        <ul class="menu">
+            
+            <li><a href="http://localhost:3000/about-us/our-leadership.html">Our Leadership</a></li>
+            
         </ul>
-    </nav><!--/sidebar nav-->
-                </div>
-            </div>
-        </div><!--/mobile-nav-->
-    </div><!--/mobile nav wrapper-->
-    <div class="content">
-        <div class="InfoHeader">
-        <div class="InfoHeaderWrapper">
-        <div class="logo"><a href="http://localhost:3000/">Community Baptist Church</a></div><!--/logo-->
-        <div class="InfoHeader__info">
-        <div class="InfoHeader__info__ServiceTimes">
-            <ul>
-                <li>Sunday School - 10AM</li>
-                <li>Main Service - 11AM</li>
-                <li>Evening Service - 6PM</li>
-                <li>Wednesday Prayer Meeting - 7PM</li>
-            </ul>
-        </div><!--/service-times-->
-        <div class="InfoHeader__info__ContactInfo">
-            <ul>
-                <li><i class="fa fa-phone"></i> <span>(631) 258-1563</span></li>
-                <li><i class="fa fa-map-marker"></i> <span>5267 Sound Ave</span></li>
-                <li><span>Riverhead, NY</span></li>
-                <hr>
-                <li><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-gear"></i></a></li>
-            </ul>
-        </div><!--/contact-info-->
-        </div><!--/info-->
-    </div><!--/infoHeaderWrapper-->
-        </div><!--/info-header-->
-        <nav class="main-navigation">
-        <ul class="navigation">
-            <li><a href="http://localhost:3000/welcome.html">Welcome</a></li>
-            <li class="dropdown"><a href="#">About Us</a>
-                <ul>
+    </li><!--/End of About Us-->
+    <li><a href="#">MINISTRIES</a>
+        <ul class="menu">
                     
-                    <li><a href="http://localhost:3000/about-us/our-leadership.html">Our Leadership</a></li>
-                    
-
-                </ul>
-            </li>
-            <li class="dropdown"><a href="#">Ministries</a>
-            <ul>
-                     
                     <li><a href="http://localhost:3000/ministries/childrens-ministries.html">Children’s Ministries</a></li>
                     
                     <li><a href="http://localhost:3000/ministries/church-wide.html">Church Wide</a></li>
@@ -128,18 +119,23 @@
                     
                     <li><a href="http://localhost:3000/ministries/youth-ministries.html">Youth Ministries</a></li>
                     
-                </ul></li>
-            <li><a href="http://localhost:3000/calendar-list.html">Calendar</a></li>
-            <li class="dropdown"><a href="#">Media</a>
-            <ul>
-                    <li><a href="http://localhost:3000/blog-list.html">Blog</a></li>
-                    <li><a href="http://localhost:3000/sermons.html">Sermons</a></li>
-                    <li><a href="http://localhost:3000/gallery.html">Gallery</a></li>
-                </ul></li>
-            <li><a href="http://localhost:3000/contact-us.html">Contact Us</a></li>
-        </nav><!--/main-navigation-->
+                </ul>
+    </li><!--/ministries-->
+    <li><a href="http://localhost:3000/calendar-list.html">CALENDAR</a></li>
+    <li><a href="#">MEDIA</a>
+        <ul class="menu">
+            <li><a href="http://localhost:3000/sermons.html">Sermons</a></li>
+            <li><a href="http://localhost:3000/blog-list.html">Blog</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </li><!--/media-->
+    <li><a href="http://localhost:3000/contact-us.html">CONTACT US</a></li>
+</ul><!--.dropdown menu --></div><!--slideout menu-->
+<div class="off-canvas-content" data-off-canvas-content>
 
-    <div class="sermonslistContent__header">
+
+
+        <div class="sermonslistContent__header">
     <div class="wrapper">
         <h1>Sermons</h1>
         <h3>The Preaching Ministry of Bible Baptist Church</h3>
@@ -495,8 +491,48 @@ I want to start this morning by reading you one of my favorite speeches from any
      
       
      
+      
+        <div class="sermonslistItem">
+            <div class="sermonslistItem__teaser">
+            <div class="sermonslistItem__title">
+                <h3><a href="http://localhost:3000/sermons/worth-fighting-for.html">Worth Fighting For</a></h3>
+                <ul class="action__buttons">
+                    
+                    
+                    <li><a href="https://dl.airtable.com/aoNuZu9WROF55GcGZJCA_2016%200626%20am.mp3" alt="play"><i class="fi-play"></i></a></li>
+                    
+                    
+                    
+                    
+                </ul><!--/action__buttons-->
+                </div><!--/sermonslistItem__title-->
+                <ul class="sermonslistItem__tagline">
+                <li><i class="fi-calendar"></i> 2016-06-26</li>
+                <li><i class="fi-clock"></i> Sunday AM</li>
+                <li><i class="fi-torso-business"></i> Ryan Hayden</li>
+                <li><i class="fi-book"></i> Acts 15:1-21</li>
+                </ul>
+                <p class="sermonslistItem__description"></p>
+                
+                
+                <audio class="sermonslistPlayer" controls>
+                    <source src="https://dl.airtable.com/aoNuZu9WROF55GcGZJCA_2016%200626%20am.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                <a href="https://dl.airtable.com/aoNuZu9WROF55GcGZJCA_2016%200626%20am.mp3" class="button secondary" target="blank" download><i class="fi-download"></i> Download</a>
+                
+                
+                <a href="http://localhost:3000/sermons/worth-fighting-for.html" class="button" >View Sermon</a>
+            </div><!--/sermonslistItem__teaser-->
+        </div><!--/sermonslistItem-->
+        
+     
+      
+     
     </div><!--/end main list-->
 </div><!--/sermonslistContent-->
+
+
 <div class="serieslistContent otherPage row small-up-2 medium-up-3 large-up-4 expanded">
 <h2>Sermon Series:</h2>
         
@@ -554,33 +590,30 @@ I want to start this morning by reading you one of my favorite speeches from any
         
 </div><!--/serieslistContent-->
 
-    </div><!--/wrapper-->  
-<footer>
-        <div class="footer-wrapper">
-        <div class="footer-main">
-            <ul>
-                <li><a href="#">Visit</a></li>
-                <li><a href="">Sermons</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-            <p>Community Baptist is located at 5267 Sound Ave, across from the North Fork Christmas Tree farm and one mile east of Long Island National Golf Club.  <a href="#">Visit this Sunday.</a></p>
-        </div><!--/main footer-->
-        <div class="footer-contact">
-        <p class="logo">Community Baptist Church</p>
-        <ul>
-            <li><a href="#"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a></li>
-            <li><a href="#"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a></li>
-            <li><a href="#"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-youtube fa-stack-1x"></i></span></a></li>
-            <li><a href="#"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-rss fa-stack-1x"></i></span></a></li>
-            <li><a href="#"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-gear fa-stack-1x"></i></span></a></li>
-        </ul>
-            
-        </div><!--/footer-contact-->
-        </div><!--/footer-wrapper-->
-    </footer>
-    <script src="http://localhost:3000/assets/js/app.js"></script>
+
+    <footer>
+    <div class="footer-wrapper">
+        <div class="footer-info">
+        <h3>Cranesville Bible Church</h3>
+        <p>Cranesville, PA</p>
+        <div class="address">
+            <p><i class="fi-map"></i>   10029 Reed St, Cranesville, PA 16410 <br>
+                <i class="fi-telephone"></i>  (814) 746-5287 <br>
+                <i class="fi-mail"></i>   info@cranesvillebiblechurch.com <br>
+                <a href="#" title="sign in" class="footer-sign-in"><i class="fi-widget"></i> Manager Sign In</a>
+            </p>
+        </div><!--/address-->
+    </div><!--/footer-info-->
+    </div><!--/footer-wrapper-->
+</footer>
+</div><!--/ off canvas content wrapper-->
+</div><!--/off canvas wrapper 2-->
+</div><!--/ off canvas wrapper 1-->
+<script src="/assets/js/app.js"></script>
+</body>
+</html>
+
 
   </body>
+
 </html>
