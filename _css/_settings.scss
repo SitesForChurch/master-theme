@@ -10,18 +10,18 @@
 // b. Change these variables.
 $body-font-family:'Martel', serif;
 $header-font-family: $body-font-family;
-
+ 
 
 // 2. Colors
 // The variables below control the color on the whole site.  Changing them changes the entire sites look and feel.
 $foundation-palette: (
-  primary: #8093AD,
-  secondary: #8093AD,
-  success: #8093AD,
-  warning: #8093AD,
-  alert: #8093AD,
+   primary: #319827,
+  secondary: #5C3F23,
+  success: #3C6E71,
+  warning: #4B4E6D,
+  alert: #319827,
 );
-$text-color: #8093AD;
+$text-color: #1F1F15;
 $light-gray: #e6e6e6;
 $medium-gray: #B8B8AD;
 $dark-gray: #333533;
@@ -45,7 +45,9 @@ $global-radius: 0;
 $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
-
+$global-font-size: 100%;
+$global-width: rem-calc(1200);
+$global-lineheight: 1.5;
 @include add-foundation-colors;
 
 // 2. Breakpoints
