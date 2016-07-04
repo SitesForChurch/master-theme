@@ -1,5 +1,5 @@
 # What's the name of the church?
-title: Cranesville Bible Church, Cranesville, PA
+title: Cranesville Bible Church
 # Give a brief description of the church
 description: > # this means to ignore newlines until "baseurl:"
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus blanditiis odio corrupti, 
@@ -21,6 +21,17 @@ default_calendar_image: "assets/calendar_default.jpg"
 map_lat: "39.476286"
 map_long: "-88.4009097"
 
+# Airtable API Stuff
+airtable:
+  apikey: "keyRTLlrVS02vC3Vx"
+  blog: "appxF48xfkO7dHWGh"
+  sermons: "apprDNNyNO4RHDP1q"
+  series: "apprDNNyNO4RHDP1q"
+  ministries: "appo4EmHX9KELKJ0u"
+  photos: "appo4EmHX9KELKJ0u"
+  events: "appo4EmHX9KELKJ0u"
+  abouts: "appNOtPfC2oY5GcGt"
+
 # LEAVE EVERYTHING ELSE ALONE!!
 
 # Build settings
@@ -32,6 +43,7 @@ exclude:
   - node_modules
   - gulpfile.js 
   - bower_components
+
 
 page_gen:
   - data: 'ministries'
