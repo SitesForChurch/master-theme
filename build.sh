@@ -9,4 +9,9 @@ cd $path;
 
 echo "Update repo ...";
 git pull $git_path;
+
+if  $(node ./test_build.js) ; then
+    echo 'Be careful not to fall off!'
+fi
+
 echo -e '\n Complete';
