@@ -1,6 +1,6 @@
 var Airtable = require('airtable');
-var fs          = require('fs');
-var yaml        = require('js-yaml');
+var yaml     = require('js-yaml');
+var fs       = require('fs');
 
 function loadConfig() {
   var ymlFile = fs.readFileSync('_config.yml', 'utf8');
@@ -8,12 +8,7 @@ function loadConfig() {
 }
 
 var config = loadConfig().airtable;
-var jsonfile = require('jsonfile');
-var fileAbout = '../../_data/abouts.json';
 var abouts = new Airtable({ apiKey: config.apikey }).base(config.abouts);
-var aboutJson = [];
-var aboutJsonTest = [];
-
 
 var updated = false;
 
@@ -28,12 +23,5 @@ abouts('Pages').select({
     fetchNextPage();
 
 }, function done(error) {
-    if (error) {
-        console.log(error);
-    }
-   console.log("updated");
    console.log(updated);
 });
-
-// test to nodejs return value for shell
-//return console.log(false);
