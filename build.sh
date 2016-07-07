@@ -10,6 +10,7 @@ cd $path;
 echo "Update repo ...";
 git pull $git_path;
 
+echo "Test Sermons"
 if  $(node ./test_build.js) ; then
     echo 'Be careful not to fall off!'
 fi
