@@ -115,7 +115,7 @@ fi
 if $need_build;
 then
 echo "Build Jekyll";
-#jekyll build
+jekyll build
 echo "Compile SASS";
 #in progress   compile sass
 echo "Run Glynn";
