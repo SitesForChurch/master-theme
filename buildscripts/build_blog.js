@@ -9,25 +9,24 @@ function loadConfig() {
 
 var config = loadConfig().airtable;
 var jsonfile = require('jsonfile');
-var fileAbout = './_data/abouts.json';
-var abouts = new Airtable({ apiKey: config.apikey }).base(config.abouts);
-var aboutJson = [];
+var fileBlog = './_data/blog.json';
+var blog = new Airtable({ apiKey: config.apikey }).base(config.blog);
+var blogJson = [];
 
-abouts('Pages').select({
+blog('Posts').select({
         maxRecords: 100,
       //sort
-        sort: [{field: "title", direction: "asc"}],
-        filterByFormula: "TRUE(published)",
+        sort: [{field: "date_added", direction: "desc"}],
+        filterByFormula: "published",
       //Formula to how to get data
       // help https://support.airtable.com/hc/en-us/articles/203255215-Formula-Field-Reference
 
     }).eachPage(function page(records, fetchNextPage) {
         records.forEach(function(record) {
-          aboutJson.push(record._rawJson.fields);
+          blogJson.push(record._rawJson.fields);
         });
         fetchNextPage();
     }, function done(error) {
-      jsonfile.writeFile(fileAbout, aboutJson, function (err) {
+      jsonfile.writeFile(fileBlog, blogJson, function (err) {
       });
     });
-

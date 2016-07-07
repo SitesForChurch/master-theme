@@ -8,12 +8,11 @@ function loadConfig() {
 }
 
 var config = loadConfig().airtable;
-var abouts = new Airtable({ apiKey: config.apikey }).base(config.abouts);
+var events = new Airtable({ apiKey: config.apikey }).base(config.events);
 
 var updated = false;
 
-abouts('Pages').select({
-   view: "Main View",
+events('Church Events').select({
   filterByFormula: "OR(IS_BEFORE(DATEADD(NOW(), -30, 'minutes'), CREATED_TIME()), IF(ISERROR(IS_BEFORE(DATEADD(NOW(), -30, 'minutes'), updated_at)), FALSE(),IS_BEFORE(DATEADD(NOW(), -30, 'minutes'), updated_at)))"
 }).eachPage(function page(records, fetchNextPage) {
     records.forEach(function(record) {
