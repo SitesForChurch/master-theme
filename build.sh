@@ -24,8 +24,13 @@ else
     echo 'Abouts not changed skip build'    
 fi
 
-
+if $need_build;
+then
+echo "Will build Jekyll";
 #jekyll build
 #in progress   compile sass
 #in progress   run glynn
+else 
+echo "Everithing up to date. Skip building";
+fi
 echo -e '\n Complete all scripts';
