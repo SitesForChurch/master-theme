@@ -26,14 +26,18 @@
             <li><a href="#">ABOUT US</a>
                 <ul class="menu">
                     {% for item in site.data.abouts %}
+                    {% if  item.Exclude_from_menus != true %}
                     <li><a href="{{ item.title | datapage_url: 'about-us' | prepend: site.baseurl | prepend: site.url }}">{{item.title}}</a></li>
+                    {% endif %}
                     {% endfor %}
                 </ul>
             </li><!--/End of About Us-->
             <li><a href="#">MINISTRIES</a>
                 <ul class="menu">
                     {% for item in site.data.ministries %}
+                    {% if  item.Exclude_from_menus != true %}
                     <li><a href="{{ item.name | datapage_url: 'ministries' | prepend: site.baseurl | prepend: site.url }}">{{item.name}}</a></li>
+                    {% endif %}
                     {% endfor %}
                 </ul>
             </li><!--/ministries-->
@@ -58,15 +62,19 @@
     <li><a href="{{ "welcome.html" | prepend: site.baseurl | prepend: site.url }}">WELCOME</a></li>
     <li><a href="#">ABOUT US</a>
         <ul class="menu">
-            {% for item in site.data.abouts %}
-            <li><a href="{{ item.title | datapage_url: 'about-us' | prepend: site.baseurl | prepend: site.url }}">{{item.title}}</a></li>
-            {% endfor %}
+           {% for item in site.data.abouts %}
+                    {% if  item.Exclude_from_menus != true %}
+                    <li><a href="{{ item.title | datapage_url: 'about-us' | prepend: site.baseurl | prepend: site.url }}">{{item.title}}</a></li>
+                    {% endif %}
+                    {% endfor %}
         </ul>
     </li><!--/End of About Us-->
     <li><a href="#">MINISTRIES</a>
         <ul class="menu">
                     {% for item in site.data.ministries %}
+                    {% if  item.Exclude_from_menus != true %}
                     <li><a href="{{ item.name | datapage_url: 'ministries' | prepend: site.baseurl | prepend: site.url }}">{{item.name}}</a></li>
+                    {% endif %}
                     {% endfor %}
                 </ul>
     </li><!--/ministries-->
