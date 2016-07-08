@@ -2,11 +2,12 @@
 
 cd ~/code/master-theme
 gem install jekyll
-npm install
-npm install -g gulp
+gem install glynn
 npm install -g bower
-npm install gulp
+npm install -g node-sass
+npm install
 npm install bower
 bower install
-npm install -g pubstorm
+chmod a+x _build.sh
+chmod a+x _test.sh
 rm -rf .git
