@@ -132,6 +132,18 @@
 
 }
 
+.ministriesPage__Content-main-content:last-child {
+    @include grid-column(12);
+    @include breakpoint(large){
+    @include grid-column(12);
+    border-right: none;
+    min-height: 90vh;
+}
+}
+
+.ministriesPage__Content-main-content:last-child .ministryInfo-ministry {
+    min-width: 40%;
+}
 
 .ministriesPage__Content-secondary-content {
     @include grid-column(12);

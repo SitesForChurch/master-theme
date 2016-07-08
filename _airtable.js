@@ -235,7 +235,8 @@ var updated = false;
         maxRecords: 100,
       //sort
         filterByFormula: "published",
-        view: "Main View"
+        view: "Main View",
+        sort: [{field: "date_added", direction: "desc"}]
       //Formula to how to get data
       // help https://support.airtable.com/hc/en-us/articles/203255215-Formula-Field-Reference
 

@@ -20,6 +20,16 @@ background-size: cover;
 
 </style>
 {% endif %}
+{% for event in site.data.events %}
+{% if event.ministry_name[0] == page.title %}
+{% assign eventsPresent = true %}
+{% endif %}
+{% endfor %}
+{% for photos in site.data.photos %}
+{% if photos.ministry_name[0] == page.title %}
+{% assign photosPresent = true %}
+{% endif %}
+{% endfor %}
 
 <div class="ministriesPage">
     <div class="ministriesPage__Title">
@@ -67,7 +77,7 @@ background-size: cover;
             {{page.body_content | markdownify}}
             {% endif %}
         </div><!--/ministriesPage__Content-main-content-->
-       
+       {% if page.logo or photosPresent or eventsPresent %}
         <div class="ministriesPage__Content-secondary-content">
                 {% if page.logo  %}
                 {% for img in page.logo%}
@@ -76,23 +86,48 @@ background-size: cover;
                 </div><!--ministriesLogo-->
                 {% endfor %}
                 {% endif %}
-                
-                
-                {% comment %}<div class="ministriesCalendar">
-                    <h3>Upcoming Ministry Events:</h3>
-                    <div data-tockify-component="mini"  data-tockify-calendar="biblebaptistchurch" data-tockify-tags="#" data-tockify-view="agenda"></div>
-                    <script data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
-                     
-                </div><!--/ministriesCalendar-->
+                {% if eventsPresent %}
+                 <div class="ministry-upcoming-events">
+                    <h2>Upcoming Ministry Events</h2>
+                     {% assign counter = 0 %}
+                    {% assign maxEventCount = 2 %}
+                     {% for event in site.data.events %}
+                     {% if event.ministry_name[0] == page.title and counter < maxEventCount %}
+                {% assign counter=counter | plus:1 %}
+                     <article class="event">
+                    <div class="event-date">
+                      <p class="event-month">{{event.DateTime | date: "%b"}}</p>
+                      <p class="event-day">{{event.DateTime | date: "%d"}}</p>
+                    </div>
+                    <div class="event-desc">
+                      <h4 class="event-desc-header">{{event.event_name}}</h4>
+                      <a href="{{ event.event_name | datapage_url: 'events' | prepend: site.baseurl | prepend: site.url }}" class="rsvp button">Details</a>
+                    </div>
+                </article>
+                    {% endif %}
+                {% endfor %}
                
-                <div class="ministriesPhotos">
+               </div><!--/ministry-events-->
+               {% endif %}
+                {% if photosPresent %}
+                {% assign counter = 0 %}
+                {% assign maxPostCount = 1 %}
+                {% for group in site.data.photos %}
+                {% if group.ministry_name[0] == page.title and counter < maxPostCount %}
+                {% assign counter=counter | plus:1 %}
+                  <div class="ministriesPhotos">
                     <h3>Recent Ministry Photos:</h3>
                     <div class="galleryWrapper">
-                        <a href="#" class="thumbnail"><img src="#" alt="#"></a>
+                    
+                    {% for img in group.gallery | limit: 4 %}
+                        <a href="{{img.url}}" class="thumbnail"><img src="{{img.thumbnails.large.url}}" width="150" height="150" /></a>
+                    {% endfor %}
+                    {% endif %}
                     </div> <!-- galleryWrapper -->
-
-                </div><!--/ministriesPhotos-->{% endcomment %}
-               
+                    {% endfor %}
+                </div><!--/ministriesPhotos-->
+                {% endif %}
         </div><!--/ministriesPage__Content-secondary-content-->
+        {% endif %}
     </div><!--/ministriesPage__Content-->
 </div><!--ministriesPage-->
