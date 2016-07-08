@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:3000//</link>
     <atom:link href="http://localhost:3000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 08 Jul 2016 01:11:22 +0300</pubDate>
-    <lastBuildDate>Fri, 08 Jul 2016 01:11:22 +0300</lastBuildDate>
+    <pubDate>Thu, 07 Jul 2016 21:53:20 -0500</pubDate>
+    <lastBuildDate>Thu, 07 Jul 2016 21:53:20 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -141,7 +141,7 @@ Images are exactly like links, only they start with an exclamation point.  Like 
 &lt;p&gt;These are the best tools and easiest tools that we can find.  They are also useful for more than your website.  You can use markdown for all kinds of writing.  (We’ll have blog posts about that), you can use airtable for many things in your church (we’ll be releasing posts about that too) and you’ll find that the featured images can be reused as slides (or vice versa) or for other promotions.&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 10 Jun 2016 21:50:36 +0300</pubDate>
+        <pubDate>Fri, 10 Jun 2016 13:50:36 -0500</pubDate>
         <link>http://localhost:3000//general/2016/06/10/Sitesforchurch-101.html</link>
         <guid isPermaLink="true">http://localhost:3000//general/2016/06/10/Sitesforchurch-101.html</guid>
         
@@ -222,7 +222,7 @@ Images are exactly like links, only they start with an exclamation point.  Like 
 
 &lt;p&gt;The one tradeoff of using Airtable is using markdown for long content.  We love markdown anyway and think this is really worth it.  Do you have your own thoughts about Airtable?  Let us know in the comments.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 25 May 2016 21:50:36 +0300</pubDate>
+        <pubDate>Wed, 25 May 2016 13:50:36 -0500</pubDate>
         <link>http://localhost:3000//general/2016/05/25/airtable-for-a-website.html</link>
         <guid isPermaLink="true">http://localhost:3000//general/2016/05/25/airtable-for-a-website.html</guid>
         
@@ -258,7 +258,7 @@ They will also get to befriend and encourage pastors all over the country and le
 
 &lt;p&gt;So not only will they get a good paying job they can do while in college, they will learn new skills and gain invaluable experience that they can bring with them into the ministry.  We think it’s a win/win/win: churches benefit with a great church website, college students benefit by earning and learning and the cause of Christ benefits as both of these things bear fruit.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 31 Mar 2016 21:50:36 +0300</pubDate>
+        <pubDate>Thu, 31 Mar 2016 13:50:36 -0500</pubDate>
         <link>http://localhost:3000//general/2016/03/31/our-weird-business-model.html</link>
         <guid isPermaLink="true">http://localhost:3000//general/2016/03/31/our-weird-business-model.html</guid>
         

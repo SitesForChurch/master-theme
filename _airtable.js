@@ -9,47 +9,47 @@ function loadConfig() {
 
 var config = loadConfig().airtable;
 var jsonfile = require('jsonfile');
-var fileAbout = '../../_data/abouts.json';
+var fileAbout = '_data/abouts.json';
 var abouts = new Airtable({ apiKey: config.apikey }).base(config.abouts);
 var aboutJson = [];
 var aboutJsonTest = [];
 
-var fileBlog = '../../_data/blog.json';
+var fileBlog = '_data/blog.json';
 var blog = new Airtable({ apiKey: config.apikey }).base(config.blog);
 var blogJson = [];
 var blogJsonTest = [];
 
-var fileEvents = '../../_data/events.json';
+var fileEvents = '_data/events.json';
 var events = new Airtable({ apiKey: config.apikey }).base(config.events);
 var eventsJson = [];
 var eventsJsonTest = [];
 
-var fileMinistries = '../../_data/ministries.json';
+var fileMinistries = '_data/ministries.json';
 var ministries = new Airtable({ apiKey: config.apikey }).base(config.ministries);
 var ministriesJson = [];
 var ministriesJsonTest = [];
 
-var filehomeMinistries = '../../_data/homeministries.json';
+var filehomeMinistries = '_data/homeministries.json';
 var homeministries = new Airtable({ apiKey: config.apikey }).base(config.ministries);
 var homeministriesJson = [];
 var homeministriesJsonTest = [];
 
-var filePhotos = '../../_data/photos.json';
+var filePhotos = '_data/photos.json';
 var photos = new Airtable({ apiKey: config.apikey }).base(config.photos);
 var photosJson = [];
 var photosJsonTest = [];
 
-var filesermons = '../../_data/sermons.json';
+var filesermons = '_data/sermons.json';
 var sermons = new Airtable({ apiKey: config.apikey }).base(config.sermons);
 var sermonsJson = [];
 var sermonsJsonTest = [];
 
-var fileseries = '../../_data/series.json';
+var fileseries = '_data/series.json';
 var series = new Airtable({ apiKey: config.apikey }).base(config.series);
 var seriesJson = [];
 var seriesJsonTest = [];
 
-var filehomeseries = '../../_data/homeseries.json';
+var filehomeseries = '_data/homeseries.json';
 var homeseries = new Airtable({ apiKey: config.apikey }).base(config.series);
 var homeseriesJson = [];
 var homeseriesJsonTest = [];
@@ -93,7 +93,7 @@ var updated = false;
 
         records.forEach(function(record) {
           aboutJson.push(record._rawJson.fields);
-          console.log('Retrieved ', record._rawJson.fields);
+          
         });
         fetchNextPage();
 
@@ -104,7 +104,7 @@ var updated = false;
       jsonfile.writeFile(fileAbout, aboutJson, function (err) {
         console.error(err)
       });
-      console.log(aboutJson);
+      console.log('abouts worked');
     });
 // }
 
@@ -125,7 +125,7 @@ var updated = false;
 
         records.forEach(function(record) {
           blogJson.push(record._rawJson.fields);
-          console.log('Retrieved ', record._rawJson.fields);
+          
         });
         fetchNextPage();
 
@@ -136,7 +136,7 @@ var updated = false;
       jsonfile.writeFile(fileBlog, blogJson, function (err) {
         console.error(err)
       });
-      console.log(blogJson);
+      console.log('blog worked');
     });
 
     // events 
@@ -155,7 +155,7 @@ var updated = false;
 
         records.forEach(function(record) {
           eventsJson.push(record._rawJson.fields);
-          console.log('Retrieved ', record._rawJson.fields);
+          
         });
         fetchNextPage();
 
@@ -166,7 +166,7 @@ var updated = false;
       jsonfile.writeFile(fileEvents, eventsJson, function (err) {
         console.error(err)
       });
-      console.log(eventsJson);
+      console.log('events worked');
     });
 
     // ministries 
@@ -185,7 +185,7 @@ var updated = false;
 
         records.forEach(function(record) {
           ministriesJson.push(record._rawJson.fields);
-          console.log('Retrieved ', record._rawJson.fields);
+          
         });
         fetchNextPage();
 
@@ -196,7 +196,7 @@ var updated = false;
       jsonfile.writeFile(fileMinistries, ministriesJson, function (err) {
         console.error(err)
       });
-      console.log(ministriesJson);
+      console.log('ministries worked');
     });
 
     // home ministries 
@@ -215,7 +215,7 @@ var updated = false;
 
         records.forEach(function(record) {
           homeministriesJson.push(record._rawJson.fields);
-          console.log('Retrieved ', record._rawJson.fields);
+          
         });
         fetchNextPage();
 
@@ -226,7 +226,7 @@ var updated = false;
       jsonfile.writeFile(filehomeMinistries, homeministriesJson, function (err) {
         console.error(err)
       });
-      console.log(homeministriesJson);
+      console.log('home ministries worked');
     });
 
     // photos 
@@ -245,7 +245,7 @@ var updated = false;
 
         records.forEach(function(record) {
           photosJson.push(record._rawJson.fields);
-          console.log('Retrieved ', record._rawJson.fields);
+          
         });
         fetchNextPage();
 
@@ -256,7 +256,7 @@ var updated = false;
       jsonfile.writeFile(filePhotos, photosJson, function (err) {
         console.error(err)
       });
-      console.log(photosJson);
+      console.log('photos worked');
     });
 
     // sermons 
@@ -275,7 +275,7 @@ var updated = false;
 
         records.forEach(function(record) {
           sermonsJson.push(record._rawJson.fields);
-          console.log('Retrieved ', record._rawJson.fields);
+          
         });
         fetchNextPage();
 
@@ -286,7 +286,7 @@ var updated = false;
       jsonfile.writeFile(filesermons, sermonsJson, function (err) {
         console.error(err)
       });
-      console.log(sermonsJson);
+      console.log('sermons worked');
     });
 
     // series 
@@ -305,7 +305,7 @@ var updated = false;
 
         records.forEach(function(record) {
           seriesJson.push(record._rawJson.fields);
-          console.log('Retrieved ', record._rawJson.fields);
+          
         });
         fetchNextPage();
 
@@ -316,7 +316,7 @@ var updated = false;
       jsonfile.writeFile(fileseries, seriesJson, function (err) {
         console.error(err)
       });
-      console.log(seriesJson);
+      console.log('series worked');
     });
 
         // homeseries 
@@ -335,7 +335,7 @@ var updated = false;
 
         records.forEach(function(record) {
           homeseriesJson.push(record._rawJson.fields);
-          console.log('Retrieved ', record._rawJson.fields);
+          
         });
         fetchNextPage();
 
@@ -346,5 +346,5 @@ var updated = false;
       jsonfile.writeFile(filehomeseries, homeseriesJson, function (err) {
         console.error(err)
       });
-      console.log(homeseriesJson);
+      console.log('home series worked');
     });
