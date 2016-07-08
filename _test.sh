@@ -11,8 +11,8 @@ echo "Update Data";
 node _airtable.js;
 
 echo "Compiling SASS, building jekyll, running browser-sync";
-node-sass _css/app.scss _site/assets/css/app.css -w & 
 jekyll build -w & 
+node-sass _css/app.scss _site/assets/css/app.css & 
 browser-sync start --server '_site' --files '_site';
 
 

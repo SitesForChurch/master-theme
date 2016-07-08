@@ -43,6 +43,8 @@ exclude:
   - node_modules
   - gulpfile.js 
   - bower_components
+keep_files:
+  - css
 
 
 page_gen:
