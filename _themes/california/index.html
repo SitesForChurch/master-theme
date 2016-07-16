@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="hero">
     <div class="hero__box">
-        <h3 class="study">Rooted and built up in Him and established in the faith, as you have been taught.</h3>
+        <h3 class="study">Rooted and built up in HIM and established in the faith, as you have been taught.</h3>
         <h4>Colossians 2:6-7</h4>
     </div>
     <p><i class="fi-arrow-down"></i></p>
@@ -15,7 +15,7 @@ layout: default
     </div><!--/wrapper-->
 </div><!--/visitors-->
 <div class="currentSeries">
-    {% for item in site.data.series limit: 2 offset: 1 %}
+    {% for item in site.data.homeseries limit: 2 offset: 1 %}
     <div class="currentSeries__series">
         <a href="{{ item.title | datapage_url: 'series' | prepend: site.baseurl | prepend: site.url }}">{%if item.featured_image%}{% for img in item.featured_image %}<img src="{{ img.url }}" alt="sermon series graphic" class="thumbnail">{% endfor %}{% else %}<img src="http://placehold.it/240x240" alt="sermon series graphic" class="thumbnail">{%endif%}</a>
         {% if item.service %}
@@ -31,11 +31,11 @@ layout: default
 </div><!--/currentSeries-->
 <div class="homeMinistries">
     <h1>Featured Ministries</h1>
-    {% for item in site.data.ministries limit: 3 %}
+    {% for item in site.data.homeministries limit: 3 %}
         {% if item.header_image %}
             {% for img in item.header_image %}
                 <div class="ministry" style="background: url({{img.url}}) no-repeat center center">
-       	    {% endfor%}
+            {% endfor%}
         {% else %}
             <div class="ministry" style="background: url(/assets/default_header.jpg) no-repeat center center">
         {% endif %}
